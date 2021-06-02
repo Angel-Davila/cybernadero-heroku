@@ -6,7 +6,7 @@ import db_config as database
 
 app=Flask(__name__)
 
-all_data = database.db.python
+all_data = database.db.Badge.find()
 
 if __name__ == '__main__':
     app.run(load_dotenv=True)
