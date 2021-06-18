@@ -19,10 +19,9 @@ class Badge(Resource):
             'name':request.json['name'],
             'age':request.json['age'],
             'city':request.json['city'],
-            'followers':request.json['followers'],
-            'likes':request.json['likes'],
-            'post':request.json['post'],
-            'posts':request.json['posts'],
+            'bets':request.json['bets'],
+            'state':request.json['state'],
+            
     }).inserted_id)
 
         return jsonify({"_id":_id})
@@ -41,10 +40,9 @@ class Badge(Resource):
             'name':response['name'],
             'age':response['age'],
             'city':response['city'],
-            'followers':response['followers'],
-            'likes':response['likes'],
-            'post':response['post'],
-            'posts':response['posts'],
+            'bets':response['bets'],
+            'state':response['state'],
+
 
             
         }})
