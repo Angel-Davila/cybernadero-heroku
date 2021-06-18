@@ -41,7 +41,7 @@ def get_kids():
 
 
 
-api.add_resource(Badge, '/new/','/<string:by>=<string:data>/')    
+api.add_resource(Badge, '/new/','/<string:by>:<string:data>/')    
 api.add_resource(Badges, '/all/', '/delete/all/')
 api.add_resource(Posts, '/new/post/<string:_id>/', '/posts/<string:_id>/', '/<string:_id>/<string:uuid>/')
 
