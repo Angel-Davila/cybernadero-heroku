@@ -19,8 +19,10 @@ class Badge(Resource):
             'name':request.json['name'],
             'age':request.json['age'],
             'city':request.json['city'],
-            'bets':request.json['bets'],
-            'state':request.json['state'],
+            'followers':request.json['followers'],
+            'likes':request.json['likes'],
+            'post':request.json['post'],
+
             
     }).inserted_id)
 
@@ -40,8 +42,9 @@ class Badge(Resource):
             'name':response['name'],
             'age':response['age'],
             'city':response['city'],
-            'bets':response['bets'],
-            'state':response['state'],
+            'followers':response['followers'],
+            'likes':response['likes'],
+            'post':response['post'],
 
 
             
