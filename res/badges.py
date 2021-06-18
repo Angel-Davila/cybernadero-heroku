@@ -23,18 +23,20 @@ class Badges(Resource):
                 'name':request.json[0]['name'],
                 'age':request.json[0]['age'],
                 'city':request.json[0]['city'],
-                'bets':request.json[0]['bets'],
-                'state':request.json[0]['state'],
-                   
+                'followers':request.json[0]['followers'],
+                'post':request.json[0]['post'],
+                'likes':request.json[0]['likes'],
+                "posts":[]   
             },
             {
                 'header_img_url':request.json[1]['header_img_url'],
                 'profile_picture_url':request.json[1]['profile_picture_url'],
                 'name':request.json[1]['name'],
                 'age':request.json[1]['age'],
-                'city':request.json[1]['city'],
-                'bets':request.json[1]['bets'],
-                'state':request.json[1]['state'],
+                'followers':request.json[1]['followers'],
+                'post':request.json[1]['post'],
+                'likes':request.json[1]['likes'],
+                "posts":[] 
                          
             }
             
