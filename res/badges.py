@@ -3,6 +3,7 @@ from flask.wrappers import Response
 from flask_restful import Resource, abort
 from flask_pymongo import pymongo
 from bson.json_util import dumps, ObjectId
+from werkzeug.wrappers import response
 import db_config as database
 
 class Badges(Resource):
@@ -26,7 +27,6 @@ class Badges(Resource):
                 'followers':request.json[0]['followers'],
                 'post':request.json[0]['post'],
                 'likes':request.json[0]['likes'],
-                "posts":[]   
             },
             {
                 'header_img_url':request.json[1]['header_img_url'],
@@ -36,7 +36,6 @@ class Badges(Resource):
                 'followers':request.json[1]['followers'],
                 'post':request.json[1]['post'],
                 'likes':request.json[1]['likes'],
-                "posts":[] 
                          
             }
             

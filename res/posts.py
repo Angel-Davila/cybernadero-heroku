@@ -53,4 +53,4 @@ class Posts (Resource):
         if response:
             return response
         else:
-            abort(jsonify({"status":404, "_id": f"{_id} not foun"}))
+            abort(jsonify({"status":404, "_id": f"{_id} not found"}))
